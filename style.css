@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+}
+
+:root{
+    --primary: #fff;
+    --secondary: #111314;
+    --textcolor: #1b57da;
+}
+
+.switch{
+    --primary: #111314;
+    --secondary: #fff;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--primary);
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    z-index: 222;
+}
+
+.logo{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+ul li{
+    margin: 0 20px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: right;
+    margin-right: 100px;
+}
+
+ul li a{
+    display: block;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 1;
+    color: var(--secondary);
+}
+
+ul li:hover a{
+    color: var(--textcolor);
+}
+
+.row{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh-116px); 
+}
+
+.cols{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.textdata{
+    margin-left: 30px;
+}
+
+.textdata h2{
+    font-size: 7em;
+    font-weight: 600;
+    color: var(--secondary);
+    z-index: 1111;
+}
+
+.textdata h2 span{
+    color: var(--textcolor);
+    font-weight: 900;
+}
+
+.textdata h3{
+    font-size: 3em;
+    font-weight: 400;
+    color: var(--secondary);
+    margin: 10px 0;
+}
+
+.textdata p{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 10px 0;
+}
+
+.textdata .btn{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn button{
+    border: none;
+    background: var(--textcolor);
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.btn button:hover{
+    transition: 0.3s ease;
+    padding: 10px 40px;
+}
+
+.sociallinks{
+    position: absolute;
+    bottom: 100px;
+}
+
+.sociallinks i{
+    font-size: 3em;
+    margin: 0 20px;
+    cursor: pointer;
+    color: var(--secondary);
+    transition: 0.2s ease;
+}
+
+.sociallinks i:hover{
+    font-size: 3.4em;
+    color: var(--textcolor);
+}
+
+.imagedata{
+    overflow: hidden;
+}
+
+.imgbox{
+    position: relative;
+    width: 650px;
+    z-index: 1;
+    transition: 0.3s ease;
+    margin-right: 100px;
+}
+
+.imgbox img{
+    width: 100%;
+
+}
+
+.imagedata:hover .imgbox{
+    transform: translateX(-10px);
+}
+
+.imagedata .pattern{
+    position: absolute;
+    background: url('Group 1.png');
+    height: 80%;
+    width: 40%;
+    background-size: cover;
+    right: 20px;
+    top: 50px;
+    transition: 0.3s ease;
+}
+
+.imagedata:hover .pattern{
+    transform: translate(20px,-10px) scale(0.95);
+}
+
+.toggleSwitch{
+    position: relative;
+}
+
+.toggleSwitch .fa{
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.fa-sun{
+    display: none;
+    color: #fff;
+}
+
+.switch .fa-sun{
+    display: block;
+}
+
+.switch .fa-moon{
+    display: none;
+}
